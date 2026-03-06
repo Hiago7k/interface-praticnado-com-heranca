@@ -4,11 +4,11 @@ internal class Consultoria : IServico
 {
     public Funcionario colaborador;
 
-    public Consultoria(Funcionario colaborador, string tipoDeServico, string tituloDaTarefa)
+    public Consultoria(string tituloDaTarefa, Funcionario colaborador)
     {
-        this.colaborador = colaborador;
-        TipoDeServico = tipoDeServico;
         TituloDaTarefa = tituloDaTarefa;
+        this.colaborador = colaborador;
+
     }
 
     public string TipoDeServico { get; }
