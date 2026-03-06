@@ -2,6 +2,14 @@
 
 internal class Manutencao : IServico
 {
+    public Manutencao(string titulodatarefa, Funcionario colaborador)
+    {
+       
+        TituloDaTarefa = titulodatarefa;
+        this.colaborador = colaborador;
+
+    }
+
     public Funcionario colaborador { get;}
     public string TipoDeServico { get; }
     public string TituloDaTarefa { get; }
